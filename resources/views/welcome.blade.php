@@ -1,6 +1,6 @@
 {{-- <x-app title="Title of Web Page"> --}}
 
-    <section class="bg-gray-200">
+    <section class="container mx-auto bg-white">
 
 
 

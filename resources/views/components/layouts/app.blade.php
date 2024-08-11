@@ -12,7 +12,7 @@
 
     </head>
 
-    <body class='flex flex-col bg-gray-100'>
+    <body class='bg-gray-200'>
         @include('components.layouts.navbar')
 
 
