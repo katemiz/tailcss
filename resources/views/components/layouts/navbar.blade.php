@@ -78,7 +78,7 @@
             </a>
         </div>
 
-        
+
 
 
         <div class="flex-none bg-gray-800 hidden w-full md:block md:w-auto" id="navbar-dropdown">
@@ -104,7 +104,7 @@
 
 
 
-{{-- 
+{{--
   <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="flex flex-wrap items-center justify-between mx-auto p-4 bg-gray-500">
 
@@ -186,9 +186,9 @@
         </div>
     </div>
   </nav> --}}
-  
-  
-  
+
+
+
 
   {{-- <header class="bg-red-300">
 
@@ -243,13 +243,13 @@
 
 
 
-{{-- 
+{{--
   <style>
     .header-links li span {
       position: relative;
       z-index: 0;
     }
-  
+
     .header-links li span::before {
       content: '';
       position: absolute;
@@ -260,16 +260,16 @@
       display: block;
       height: 6px;
     }
-  
+
     .header-links li.active span::before {
       background-color: #fcae04;
     }
-  
+
     .header-links li:not(.active):hover span::before {
       background-color: #ccc;
     }
   </style>
-  
+
   <header class="bg-white shadow-lg h-24 hidden md:flex">
     <a href="" class="border flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8">
       <img src="https://masttech.net/images/model.svg" class="h-8" alt="PDM" />
@@ -353,32 +353,32 @@
 <nav class="bg-gray-700">
     <div class="mx-auto px-0">
       <div class="flex justify-between">
-  
+
         <div class="flex space-x-0">
           <!-- logo -->
           <div class="bg-teal-300">
             <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900 gap-2">
                 <img src="https://masttech.net/images/model.svg" class="h-8" alt="PDM" />
-              <span class="font-bold">PDM</span>
+              <span class="font-bold hidden md:w-16 w-12">PDM</span>
             </a>
           </div>
-  
+
           <!-- primary nav -->
           <ul class="hidden md:flex items-center space-x-1 px-2 text-white">
 
             <li class="py-5 hover:bg-gray-600 flex px-2 items-center">
                 <span class="text-green-300 ">
-                    <x-carbon-letter-aa class="w-8 h-8 me-2"/>                  
+                    <x-carbon-letter-aa class="w-8 h-8 me-2"/>
                 </span>
                 <span>Admin</span>
             </li>
 
 
 
-    
+
             <li href="#" class="py-5 hover:bg-gray-600 flex px-2 items-center">
                 <span class="text-green-300 ">
-                    <x-carbon-intent-request-scale-in class="w-6 h-6 me-2"/>                  
+                    <x-carbon-intent-request-scale-in class="w-6 h-6 me-2"/>
                 </span>
                 <span>Requests</span>
             </li>
@@ -387,7 +387,7 @@
 
             <li href="#" class="py-5 hover:bg-gray-600 flex px-2 items-center">
                 <span class="text-green-300 ">
-                    <x-carbon-intent-request-scale-in class="w-6 h-6 me-2"/>                  
+                    <x-carbon-intent-request-scale-in class="w-6 h-6 me-2"/>
                 </span>
                 <span>Products</span>
             </li>
@@ -396,7 +396,7 @@
 
             <li href="#" class="py-5 hover:bg-gray-600 flex px-2 items-center">
                 <span class="text-green-300 ">
-                    <x-carbon-intent-request-scale-in class="w-6 h-6 me-2"/>                  
+                    <x-carbon-intent-request-scale-in class="w-6 h-6 me-2"/>
                 </span>
                 <span>Documents</span>
             </li>
@@ -404,14 +404,14 @@
 
             <li class="py-5 hover:bg-gray-600 flex px-2 items-center">
                 <span class="text-green-300 ">
-                    <x-carbon-intent-request-scale-in class="w-6 h-6 me-2"/>                  
+                    <x-carbon-intent-request-scale-in class="w-6 h-6 me-2"/>
                 </span>
                 <span>Engineering</span>
             </li>
 
             <li class="py-5 hover:bg-gray-600 flex px-2 items-center">
                 <span class="text-green-300 ">
-                    <x-carbon-intent-request-scale-in class="w-6 h-6 me-2"/>                  
+                    <x-carbon-intent-request-scale-in class="w-6 h-6 me-2"/>
                 </span>
                 <span>MOM</span>
             </li>
@@ -420,7 +420,7 @@
             <li class="py-5 hover:bg-gray-600 flex px-2 items-center">
 
                 <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-                    Dropdown <x-carbon-chevron-down class="w-6 h-6 me-2 pl-1"/> 
+                    Dropdown <x-carbon-chevron-down class="w-6 h-6 me-2 pl-1"/>
                 </button>
 
                 <!-- Dropdown menu -->
@@ -431,7 +431,7 @@
                       </li>
                       <li aria-labelledby="dropdownNavbarLink">
                         <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                            Dropdown <x-carbon-intent-request-scale-in class="w-6 h-6 me-2"/> 
+                            Dropdown <x-carbon-intent-request-scale-in class="w-6 h-6 me-2"/>
                         </button>
                         <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
@@ -481,13 +481,13 @@
 
           </div>
         </ul>
-  
+
         <!-- secondary nav -->
         <div class="hidden md:flex items-center space-x-1">
           <a href="" class="py-5 px-3">Login</a>
           <a href="" class="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">Signup</a>
         </div>
-  
+
         <!-- mobile button goes here -->
         <div class="md:hidden flex items-center bg-gray-700">
           <button class="mobile-menu-button">
@@ -496,10 +496,10 @@
             </svg>
           </button>
         </div>
-  
+
       </div>
     </div>
-  
+
     <!-- mobile menu -->
     <div class="mobile-menu hidden md:hidden">
       <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Admin</a>
@@ -516,22 +516,22 @@
         // grab everything we need
         const btn = document.querySelector("button.mobile-menu-button");
         const menu = document.querySelector(".mobile-menu");
-        
+
         if (btn == null) {
             alert("null")
         }
-        
+
         // add event listeners
         btn.addEventListener("click", () => {
           menu.classList.toggle("hidden");
         });
-        
-        
-        
+
+
+
         </script>
-        
+
 
 
 
   </nav>
-  
+
