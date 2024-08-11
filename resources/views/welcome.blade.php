@@ -93,6 +93,11 @@
 
                 <livewire:file-list mid="8"/>
 
+                <livewire:notification type="success" message="this is the message"/>
+                <livewire:notification type="fail" message="this is the message"/>
+                <livewire:notification type="info" message="this is the message"/>
+
+
 
             </div>
 
