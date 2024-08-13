@@ -10,6 +10,11 @@ use App\Models\Record;
 
 class CreateRecords extends Component
 {
+    public $p1 = 'dfndfjkgnfjg';
+    public $p2 = 'çvmkfmerferjnf';
+    public $p3 = 'dnlwejkdnd';
+
+
     public function render()
     {
         $this->store();
@@ -23,10 +28,12 @@ class CreateRecords extends Component
     public function store() {
 
         $props = [
-            'p1' => Str::random(40),
-            'p2' => Str::random(40),
-            'p3' => Str::random(40),
+            'p1' => $this->p1,
+            'p2' => $this->p2,
+            'p3' => $this->p3,
         ];
+
+        dd($props);
 
 
         $record = Record::create($props);
