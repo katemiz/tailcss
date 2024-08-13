@@ -28,17 +28,29 @@ class CreateRecords extends Component
             'p3' => Str::random(40),
         ];
 
-        // dd($props);
 
         $record = Record::create($props);
 
 
-        $record->addMedia(storage_path('demo/oiydw.svg'))
+        $this->uid = $record->id;
+
+
+
+
+        $record->addMedia(storage_path('demo/dds.svg'))
             ->toMediaCollection('SVG');
 
 
         $record->addMedia(storage_path('demo/dms.svg'))
             ->toMediaCollection('SVG');
+
+
+
+        $this->dispatch('triggerAttachment', modelId: $this->uid);
+        $this->action = 'VIEW';
+
+
+
 
     }
 

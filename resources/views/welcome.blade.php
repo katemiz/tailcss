@@ -47,7 +47,7 @@
                           <div class="md:shrink-0 bg-blue-50">
                             <img class="h-48 w-full object-cover object-scale-down md:h-full md:w-48" src="{{asset("/images/".$motto['img'])}}" alt="Modern building architecture">
                           </div>
-                          <div class="p-8">
+                          <div class="p-8 bg-gray-100 shadow-md">
                             <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{{$motto['title']}}</div>
                             <p class="mt-2 text-slate-500">{{$motto['content']}}</p>
                           </div>
@@ -91,17 +91,23 @@
 
             <div class="rounded-lg bg-gray-200 lg:col-span-2 bg-green-300 p-4">
 
-                <livewire:file-list mid="8"/>
+                <livewire:file-list mid="3"/>
 
                 <livewire:notification type="success" message="this is the message"/>
                 <livewire:notification type="fail" message="this is the message"/>
                 <livewire:notification type="info" message="this is the message"/>
 
+                <livewire:file-upload model_name="Record" mid="3" isMultiple="{{true}}" />
+
+
+                <livewire:info-box mid="3" />
 
 
             </div>
 
           </div>
+
+
 
 
 

@@ -9,7 +9,9 @@
         <title>{{ $title ?? 'Page Title' }}</title>
 
         @vite('resources/css/app.css')
-
+        @vite('resources/js/app.js')
+        @vite('resources/js/scripts.js')
+        
     </head>
 
     <body class='bg-gray-200'>
