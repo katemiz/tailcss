@@ -4,7 +4,7 @@ use function Livewire\Volt\{state};
 use function Livewire\Volt\{computed};
 use Livewire\Volt\Component;
 
-use App\Models\Record;
+use App\Models\GenericModel;
 
 state(['mid']); // Model ID
 
@@ -15,7 +15,7 @@ new class extends Component {
 
     public function mount()
     {
-        $this->record = Record::find($this->mid);
+        $this->record = GenericModel::find($this->mid);
     }
  
 

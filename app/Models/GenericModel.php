@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Record extends Model implements HasMedia
+class GenericModel extends Model implements HasMedia
 {
     use HasFactory;
     use InteractsWithMedia;
@@ -17,7 +17,7 @@ class Record extends Model implements HasMedia
         'p2','p3'
     ];
 
-    // protected $table = 'kayit';
+    //protected $table = 'records';
 
 
     public static function last() {

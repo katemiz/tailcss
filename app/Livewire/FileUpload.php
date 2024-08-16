@@ -11,24 +11,28 @@ use App\Livewire\FileList;
 use Livewire\WithFileUploads;
 use Livewire\Attributes\On;
 
-use App\Models\Attachment;
 
 use Illuminate\Support\Facades\Log;
+
+
+use App\Models\GenericModel;
+
 
 
 class FileUpload extends Component
 {
     use WithFileUploads;
 
-    public $idAttach;
-    public $hasForm = false;
-    public $model;
-    public $modelId;
+    // public $idAttach;
+    // public $hasForm = false;
+    // public $model;
+    // public $modelId;
     public $isMultiple = false;
-    public $tag = false;
-    public $canEdit = false;
+    // public $tag = false;
+    // public $canEdit = false;
 
     public $dosyalar = [];
+
 
     public function render()
     {
@@ -47,38 +51,35 @@ class FileUpload extends Component
 
 
     #[On('triggerAttachment')]
-    public function uploadAttach($modelId = false) {
+    public function uploadAttach(Int $mid,String $collection, String $model_name) {
 
-        if ($modelId) {
-            $this->modelId = $modelId;
-        }
-
-        // if ($this->dosyalar) {
-        //     dd($this->dosyalar);
-
-        // }
-
-
-        dd($this->dosyalar);
+        $model = $this->setModel($model_name,$mid);
 
         foreach ($this->dosyalar as $dosya) {
+            $model->addMedia($dosya)->toMediaCollection($collection);
+        }
+    }
 
-            $props['user_id'] = Auth::id();
-            $props['model_name'] = $this->model;
-            $props['model_item_id'] = $this->modelId;
-            $props['original_file_name'] = $dosya->getClientOriginalName();
-            $props['mime_type'] = $dosya->getMimeType();
-            $props['file_size'] = $dosya->getSize();
-            $props['tag'] = $this->tag;
 
-            $path = $props['model_name'].'/'.$props['model_item_id'];
-            $stored_file_as = Storage::disk('MyDisk')->put($path, $dosya);
-            $props['stored_file_as'] = $stored_file_as;
 
-            Attachment::create($props);
+    public function setModel($model_name,$mid) {
+
+
+        switch ($model_name) {
+
+            default:
+            case 'GenericModel':
+                return GenericModel::find($mid);
+                break;
+
         }
 
-        $this->reset('dosyalar');
-        $this->dispatch('refreshFileList')->to(FileList::class); // Rerender FileList component
+        return false;
     }
+
+
+
+
+
+
 }

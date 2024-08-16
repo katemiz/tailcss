@@ -4,10 +4,10 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class ProductView extends Component
+class GenericModelList extends Component
 {
     public function render()
     {
-        return view('product-view');
+        return view('livewire.list-generic');
     }
 }

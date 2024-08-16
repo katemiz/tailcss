@@ -12,6 +12,8 @@
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.5",
         "livewire/volt": "^1.6",
+        "openspout/openspout": "^4.24",
+        "power-components/livewire-powergrid": "^5.10",
         "spatie/laravel-medialibrary": "^11.8"
     },
     "require-dev": {
