@@ -91,7 +91,6 @@
 
             <div class="rounded-lg bg-gray-200 lg:col-span-2 bg-green-300 p-4">
 
-                <livewire:file-list mid="3"/>
 
                 <livewire:notification type="success" message="this is the message"/>
                 <livewire:notification type="fail" message="this is the message"/>
