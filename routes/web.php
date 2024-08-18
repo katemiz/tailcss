@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\CreateRecords;
 use App\Livewire\Welcome;
 
-use App\Livewire\GenericModelActions;
+use App\Livewire\GenericModelForm;
 use App\Livewire\GenericModelView;
 use App\Livewire\GenericModelList;
 
@@ -27,7 +27,7 @@ Route::get('/create_record', CreateRecords::class);
 
 
 
-Route::get('/form_generic/{id?}', GenericModelActions::class);
+Route::get('/form_generic/{id?}', GenericModelForm::class);
 Route::get('/view_generic/{id}', GenericModelView::class);
 Route::get('/list_generic', GenericModelList::class);
 

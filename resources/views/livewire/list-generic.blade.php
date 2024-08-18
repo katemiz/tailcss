@@ -10,8 +10,7 @@
 
 
 
-    <livewire:generic-table/>
-
+    <livewire:kat-table />
 
 
 

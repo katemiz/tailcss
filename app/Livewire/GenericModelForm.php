@@ -8,13 +8,13 @@ use Illuminate\Support\Str;
 use App\Models\GenericModel;
 
 
-class GenericModelActions extends Component
+class GenericModelForm extends Component
 {
 
     public $uid = false;
 
-    public $p1;
-    public $p2;
+    public $p1="P1 ilk veri";
+    public $p2="P2 ilk veri";
     public $p3;
 
     public $media = [];
@@ -120,7 +120,7 @@ class GenericModelActions extends Component
 
             return $kayit;
         }
-        
+
         return false;
     }
 
