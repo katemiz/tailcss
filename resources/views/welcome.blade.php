@@ -1,6 +1,6 @@
 {{-- <x-app title="Title of Web Page"> --}}
 
-    <section class="container mx-auto bg-white">
+    <section class="container mx-auto bg-yellow-100">
 
 
 
@@ -97,10 +97,7 @@
                 <livewire:notification type="info" message="this is the message"/>
 
                 <livewire:file-upload model_name="Record" mid="3" isMultiple="{{true}}" />
-
-
                 <livewire:info-box mid="3" />
-
 
             </div>
 

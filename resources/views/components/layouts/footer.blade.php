@@ -1,4 +1,4 @@
-<footer class="bg-gray-700 min-h-screen">
+<footer class="bg-gray-800 min-h-screen">
 
     <div class="bg-gray-400 text-right text-sm p-2">Be Agile. Run Agile</div>
 
